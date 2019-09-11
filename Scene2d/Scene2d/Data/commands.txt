@@ -1,0 +1,67 @@
+add polygon fPolygon
+add point (1, 9)
+add point (3, 9)
+add point (5, 7)
+add point (1, 7)
+end polygon
+reflect horizontally fPolygon
+print area for fPolygon
+print circumscribing rectangle for scene
+rotate fPolygon 90
+print circumscribing rectangle for scene
+rotate fPolygon 90
+rotate fPolygon 90
+rotate fPolygon 90
+print circumscribing rectangle for scene
+add rectangle fRectangle (1, 6) (3, 2)
+print circumscribing rectangle for scene
+add circle fCircle (-2, 2) radius 1
+print circumscribing rectangle for scene
+group fPolygon, fRectangle, fCircle as fGroup
+print circumscribing rectangle for scene
+move fGroup (5, 0)
+print circumscribing rectangle for scene
+add circle pCircle (-15, 15) radius 7
+print circumscribing rectangle for scene
+delete pCircle
+print area for scene
+print circumscribing rectangle for scene
+add rectangle sRectangle (0, 0) (4, -2)
+rotate sRectangle 90
+print area for scene
+print circumscribing rectangle for scene
+delete fGroup
+print circumscribing rectangle for scene
+print area for scene
+# dd poi () - 4
+# 
+# add rectangle fRectangle (0, 0) (1, 1)
+# 
+# add circle fCircle (0, 0) radius -20
+# 
+# add polygon fPolygon 
+# add point (10, 0)
+# add point (30, 0)
+# end polygon
+# 
+# add polygon fPolygon 
+# add point (10, 0)
+# add rectangle fRectangle (0, 0) (1, 1)
+# 
+# move sGroup1234 (40, 40)
+#
+#S=6
+#(0, 9) (4, 7)
+#(1.5, 9.5) (3.5, 5.5)
+#(0, 9) (4, 7)
+#(0, 9) (4, 2)
+#(-3, 9) (4, 1)
+#(-3, 9) (4, 1)
+#(2, 9) (9, 1)
+#(-22, 22) (9, 1)
+#S=17,1415926535898
+#(2, 9) (9, 1)
+#S=25,1415926535898
+#(1, 9) (9, -3)
+#(1, 1) (3, -3)
+#S=8	  

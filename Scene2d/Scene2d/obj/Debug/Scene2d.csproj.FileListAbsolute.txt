@@ -1,0 +1,7 @@
+C:\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\bin\Debug\Scene2d.exe
+C:\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\bin\Debug\Scene2d.pdb
+C:\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\obj\Debug\Scene2d.csprojResolveAssemblyReference.cache
+C:\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\obj\Debug\Scene2d.exe
+C:\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\obj\Debug\Scene2d.pdb
+C:\Users\Artem\Documents\Codemasters\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\obj\Debug\Scene2d.exe
+C:\Users\Artem\Documents\Codemasters\Codemasters 2015-2016\C#-Lab3\Scene2d\Scene2d\obj\Debug\Scene2d.pdb

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C95478BF-EA15-4A36-90AD-0551A2453C4E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scene2d</RootNamespace>
+    <AssemblyName>Scene2d</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circle.cs" />
+    <Compile Include="CommandBuilders\AddPolygonCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\AddRectangleCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\AddCircleCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\CommandProducer.cs" />
+    <Compile Include="CommandBuilders\CopyFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\DeleteFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\GroupFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\MoveFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\PrintAreaFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\PrintCircumscribingRectangleCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\ReflectFiguresCommandBuilder.cs" />
+    <Compile Include="CommandBuilders\RotateFiguresCommandBuilder.cs" />
+    <Compile Include="Commands\AddFigureCommand.cs" />
+    <Compile Include="Commands\CopyFiguresCommand.cs" />
+    <Compile Include="Commands\DeleteFiguresCommand.cs" />
+    <Compile Include="Commands\GroupFiguresCommand.cs" />
+    <Compile Include="Commands\MoveFiguresCommand.cs" />
+    <Compile Include="Commands\PrintAreaCommand.cs" />
+    <Compile Include="Commands\PrintCircumscribingRectangleCommand.cs" />
+    <Compile Include="Commands\ReflectFiguresCommand.cs" />
+    <Compile Include="Commands\RotateFiguresCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="CommandBuilders\ICommandBuilder.cs" />
+    <Compile Include="Figures\CircleFigure.cs" />
+    <Compile Include="Figures\CompositeFigure.cs" />
+    <Compile Include="Figures\ICompositeFigure.cs" />
+    <Compile Include="Figures\IFigure.cs" />
+    <Compile Include="Figures\PolygonFigure.cs" />
+    <Compile Include="Figures\RectangleFigure.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Scene.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
